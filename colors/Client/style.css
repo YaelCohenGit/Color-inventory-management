@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url('b1.webp'); /* Replace with your image file path */
+    background-size: cover;  /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #333; /* Adjust text color for contrast */
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.colorNum {
+    font-size: 20px;
+    margin: 20px;
+    direction: rtl;
+}
+
+.allCaution {
+    color: red;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+fieldset {
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid #fdfdfd;
+    width: 50%;
+} 
+
+button {
+    padding: 5px 5px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+#icon {
+    width: 24px;
+    height: 24px;
+}

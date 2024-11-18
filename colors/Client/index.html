@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" media="screen" />
+</head>
+
+<body>
+    <h1>Colors Table</h1>
+    <table class="table table-hover" id="datatable">
+        <thead>
+            <tr>
+                <th>שם הצבע</th>
+                <th>מחיר</th>
+                <th>סדר הצגה</th>
+                <th>האם קיים במלאי</th>
+                <th>ערוך</th>
+                <th>מחק</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="colorNum">
+        <span>Total: <span id="totalColorsNumber"></span> Records</span>
+    </div>
+    <fieldset class="field">
+        <legend><b>ערכים</b></legend>
+        <label>שם הצבע</label>
+        <input type="text" id="colorNameInput" required />
+        <p class="allCaution" id="caution1b"></p>
+
+        <label>מחיר הצבע</label>
+        <input type="number" id="colorPriceInput" required />
+        <p class="allCaution" id="caution2"></p>
+
+        <label>סדר הצגה</label>
+        <input type="number" id="presentationOrderInput" required />
+        <p class="allCaution" id="caution3"></p>
+
+        <label>האם קיים במלאי?</label>
+        <input type="checkbox" id="isInStockInput" name="stock[]" required />
+
+        <!-- Hidden input for storing the color ID -->
+        <input type="hidden" id="colorIdHiddenInput" /> <!-- Hidden input for storing the colorId -->
+
+        <br /><br />
+        <button onclick="checkFormValidation()">הוסף צבע חדש</button>
+        <button onclick="editColorInDB();clearForm()">ערוך צבע קיים</button>
+    </fieldset>
+
+</body>
+
+</html>

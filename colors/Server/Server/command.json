@@ -1,0 +1,4 @@
+{
+
+} Scaffold-DbContext 'Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="E:\יעלי\ענייני עבודה בעתיד בעזרת השם\תרגיל\שלי\DB\ColorsTable.mdf";Integrated Security=True;Connect Timeout=30' Microsoft.EntityFrameworkCore.SqlServer –Context ColorsContext -OutputDir Models -Force -NoOnConfiguring
+
